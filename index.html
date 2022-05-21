@@ -6,19 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/nav.css" type="text/css">
-
+    <link rel="stylesheet" href="css/app.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title> Controle financeiro </title>
 </head>
 <body>
     <nav>
-        <label class="logo"> Controle financeiro </label>
-        <ul>
-            <li><a href="#"> Cadastro de transações </a></li>
-            <li><a href="#"> Limpar dados </a></li>
-        </ul>
+        <div class="menulogo">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+            <i class="fas fa fa-bars"></i>
+            </label>
+            
+            <label class="logo"> 
+                <img class="marca" src="img/marca.svg" alt="marca"> 
+                    <h1> Controle financeiro </h1> 
+            </label>
+                <div class="menubox">
+                    <ul>
+                        <input type="checkbox" id="close">
+                        <label for="close" class="closebtn">
+                            <i class="fa fa-times"></i>
+                        </label>
+                        <div class="listamenu">
+                        <li><a href="#"> Cadastro de transações </a></li>
+                        <li><a href="#"> Limpar dados </a></li>
+                        </div>
+                    </ul>
+                </div>
+        </div>
     </nav>
     <section>
-        <h1> conteudo </h1>
+        
     </section>
     
 </body>

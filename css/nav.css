@@ -1,0 +1,174 @@
+nav {
+    background-color: #dbdbdb;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+   
+    
+}
+
+.menulogo {
+    margin: auto;
+    display: flex;
+    width: 1100px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+label.logo {
+    font-size: 20px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.marca {
+    width: 40px; 
+    height: 36.84px;
+    margin-right: 20px;
+}
+
+nav ul {
+    float: right;
+ 
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.checkbtn {
+    font-size: 30px;
+    float: right;
+    /*margin-right: 40px;*/
+    cursor: pointer;
+    display: none;
+}
+
+.closebtn {
+    font-size: 30px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+#close {
+    display: none;
+}
+
+/*
+.menubox {
+    display: flex;
+   
+}
+*/
+
+.menubox ul {
+    text-decoration: none;
+    color: black;
+    background-color: #fff;
+    display: flex;
+    padding: 10px;
+}
+
+/*
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 20px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+ 
+*/
+
+@media (max-width: 700px) {
+    .menulogo {
+        margin: auto;
+        display: flex;
+        width: 100vw;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        
+    }
+
+   label.logo {
+
+    }
+
+    #check {
+        display: none;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    ul .closebtn {
+        display: block;
+        color: #fff;
+        float: left;
+        padding: 20px;
+    }
+
+    .listamenu {
+        
+    }
+
+    .menubox ul {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #333333;
+        top: 0%;
+        right: -100%;
+        text-align: right;
+        padding-top: 60px;
+        padding-right: 160px;
+        transition: all .5s;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    a:active, a:hover {
+        background: rgb(60, 60, 60);
+        transition: all .5s; 
+        
+    }
+
+    #check:checked ~ .menubox ul {
+        right: -20%;
+    }
+
+    #close:checked ~ .menubox ul {
+        right: -100%;
+    }
+}
+
