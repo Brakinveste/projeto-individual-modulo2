@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- o arquivo 'style.css' define estilo geral da index-->
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    
+    <!-- o arquivo 'nav.css' define o estilo da barra de navegação-->
     <link rel="stylesheet" href="css/nav.css" type="text/css">
+    
+    <!-- o arquivo 'app.css' define o estilo do conteudo abaixo da barra de navegação-->
     <link rel="stylesheet" href="css/app.css" type="text/css">
+    
+    <!-- a fonte 'lato' utilizada nesta pagina é acessa externamente no font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <title> Controle financeiro </title>
 </head>
 <body>
@@ -29,14 +38,83 @@
                             <i class="fa fa-times"></i>
                         </label>
                         <div class="listamenu">
-                        <li><a href="#"> Cadastro de transações </a></li>
-                        <li><a href="#"> Limpar dados </a></li>
+                            <li><a href="#"> Cadastro de transações </a></li>
+                            <li><a href="#"> Limpar dados </a></li>
                         </div>
                     </ul>
                 </div>
         </div>
     </nav>
-    <section>
+    <section class="container">
+        <div class="tranbox">
+            <div class="novatran">
+                <div class="subtitle1">
+                    <h2> Nova transação </h2>
+                </div>
+                <div>
+                    <label class="labelinput" for="tipotran"> Tipo de transação </label><br>
+                    <select class="tipotran" name="tipotran" id="tipotran">
+                        <option value="compra"> Compra </option>
+                        <option value="venda"> Venda </option>
+                    </select>
+
+                </div>
+                <div>
+                    <label class="labelinput" for="merc"> Nome da mercadoria </label><br>
+                    <input type="text" name="merc" id="merc" placeholder="  input">
+                </div>
+                <div>
+                    <label class="labelinput" for="val"> Valor </label><br>
+                    <input type="text" name="val" id="val" placeholder="  R$ 0,00">
+                </div>
+                <div>
+                    <input class="addtran-btn" type="submit" value="Adicionar transação">
+                </div>
+              
+
+            </div>
+            <div class="extrato">
+                <div class="subtitle2">
+                    <h2> Extrato </h2>
+                </div>
+                <div class="extratotable">
+                    
+                    <table>
+                        <tr class="tablecabecalho">
+                            <td style="width: 10%;" align="center">  </td>
+                            <td style="width: 30%;"> Mercadoria </td>
+                            <td style="width: 50%;" align="right" > Valor </td>
+                        </tr>
+                        <tr>
+                            <td align="center"> + </td>
+                            <td> Lorem ipsum dolor sit amet consectetur </td>
+                            <td align="right"> R$ 12.999,99 </td>
+                        </tr>
+                        <tr>
+                            <td align="center"> - </td>
+                            <td> Quis nostrud exercitation </td>
+                            <td align="right"> R$ 99,99 </td>
+                        </tr>
+                        <tr>
+                            <td align="center"> + </td>
+                            <td> Lorem ipsum  </td>
+                            <td align="right"> R$ 9,99 </td>
+                        </tr>
+                        
+                        <tr class="tablereso">
+                            <td align="center">  </td>
+                            <td> Total </td>
+                            <td align="right"> R$ 12.909,99 </td>
+                        </tr>
+                        
+                    </table>
+                    <div class="lucro">
+                        (LUCRO) 
+                    </div>
+                </div>
+
+            </div>
+        </div>
         
     </section>
     

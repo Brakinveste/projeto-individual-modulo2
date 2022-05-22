@@ -1,0 +1,97 @@
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+section {
+    width: 1100px;
+    margin: auto;
+}
+
+.tranbox {
+    padding: 26px 10px;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.novatran {
+    width: 400px;
+    height: 344px;
+    background-color: #ffffff;
+    border: 1px solid #979797;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 5px #979797;
+    justify-content: space-evenly;
+    
+}
+
+.labelinput {
+    font-size: 14px;
+}
+
+#merc, #val, #tipotran {
+    width: 370px;
+    height: 32px;
+    border: 1px solid #979797;
+    border-radius: 5px;
+}
+
+.addtran-btn {
+    width: 370px;
+    height: 32px;
+    background-color: #333333;
+    border: 0px solid #979797;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 14px;
+
+}
+
+.extrato {
+    
+    width: 652px;
+    height: 344px;
+}
+
+.subtitle2 {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.extratotable {
+    padding-top: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 14px;
+    
+}
+
+td {
+    border-bottom: 2px solid #979797;
+    padding: 7px;
+}
+.tablecabecalho {
+    font-weight: bold;
+    border-top: 2px solid #fff
+}
+
+.tablereso {
+    font-weight: bold;
+    border-top: 5px double #979797;
+    border-bottom-color: #ffffff; 
+    padding-bottom: 0%;
+    
+    
+}
+
+.lucro {
+    font-size: 10px;
+    text-align: end;
+}
