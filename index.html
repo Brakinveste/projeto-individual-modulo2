@@ -14,7 +14,7 @@
     <!-- o arquivo 'app.css' define o estilo do conteudo abaixo da barra de navegação-->
     <link rel="stylesheet" href="css/app.css" type="text/css">
     
-    <!-- a fonte 'lato' utilizada nesta pagina é acessa externamente no font awesome-->
+    <!-- a fonte 'lato' utilizada nesta pagina é acessada externamente no font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <title> Controle financeiro </title>
@@ -51,23 +51,25 @@
                 <div class="subtitle1">
                     <h2> Nova transação </h2>
                 </div>
-                <div>
-                    <label class="labelinput" for="tipotran"> Tipo de transação </label><br>
-                    <select class="tipotran" name="tipotran" id="tipotran">
-                        <option value="compra"> Compra </option>
-                        <option value="venda"> Venda </option>
-                    </select>
+                <div class="conjuntoinput">
+                    <div>
+                        <label class="labelinput" for="tipotran"> Tipo de transação </label><br>
+                        <select class="tipotran" name="tipotran" id="tipotran">
+                            <option value="compra"> Compra </option>
+                            <option value="venda"> Venda </option>
+                        </select>
 
+                    </div>
+                    <div>
+                        <label class="labelinput" for="merc"> Nome da mercadoria </label><br>
+                        <input type="text" name="merc" id="merc" placeholder="  input">
+                    </div>
+                    <div>
+                        <label class="labelinput" for="val"> Valor </label><br>
+                        <input type="text" name="val" id="val" placeholder="  R$ 0,00">
+                    </div>
                 </div>
-                <div>
-                    <label class="labelinput" for="merc"> Nome da mercadoria </label><br>
-                    <input type="text" name="merc" id="merc" placeholder="  input">
-                </div>
-                <div>
-                    <label class="labelinput" for="val"> Valor </label><br>
-                    <input type="text" name="val" id="val" placeholder="  R$ 0,00">
-                </div>
-                <div>
+                <div class="add-btn">
                     <input class="addtran-btn" type="submit" value="Adicionar transação">
                 </div>
               
@@ -81,9 +83,9 @@
                     
                     <table>
                         <tr class="tablecabecalho">
-                            <td style="width: 10%;" align="center">  </td>
-                            <td style="width: 30%;"> Mercadoria </td>
-                            <td style="width: 50%;" align="right" > Valor </td>
+                            <td class="coluna1" style="width: 10%;" align="center">  </td>
+                            <td class="coluna2" style="width: 30%;"> Mercadoria </td>
+                            <td class="coluna3" style="width: 50%;" align="right" > Valor </td>
                         </tr>
                         <tr>
                             <td align="center"> + </td>

@@ -3,19 +3,18 @@ nav {
     height: 80px;
     width: 100%;
     display: flex;
-    /*justify-content: space-between;*/
     align-items: center;
    
     
 }
 
 .menulogo {
+    width: 1100px;
     margin: auto;
     display: flex;
-    width: 1100px;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    
 }
 
 label.logo {
@@ -67,12 +66,6 @@ nav ul li {
     display: none;
 }
 
-/*
-.menubox {
-    display: flex;
-   
-}
-*/
 
 .menubox ul {
     text-decoration: none;
@@ -82,33 +75,14 @@ nav ul li {
     padding: 10px;
 }
 
-/*
-@media (max-width: 952px) {
-    label.logo {
-        font-size: 20px;
-        padding-left: 50px;
-    }
-
-    nav ul li a {
-        font-size: 16px;
-    }
-}
- 
-*/
-
-@media (max-width: 700px) {
-    .menulogo {
-        margin: auto;
+/* tablet - portrait */
+@media (min-width: 768px) and (max-width: 1023px) {
+        .menulogo {
+        width: 100%;
         display: flex;
-        width: 100vw;
-        align-items: center;
         justify-content: space-between;
         flex-direction: row-reverse;
         
-    }
-
-   label.logo {
-
     }
 
     #check {
@@ -171,4 +145,10 @@ nav ul li {
         right: -100%;
     }
 }
+
+@media (max-width: 1024px) {
+
+}
+
+
 
