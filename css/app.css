@@ -113,77 +113,14 @@ td {
     text-align: end;
 }
 
-/* tablet - portrait */
-@media (min-width: 768px) and (max-width: 1023px) {
-    section {
-        width: 95%;
-        margin: auto;
-    }
 
-    .tranbox {
-        padding: 26px 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-           
-    }
-
-    .novatran {
-        width: 95%;
-        height: 189px;
-        margin: 0px 10px;
-        background-color: #ffffff;
-        border: 1px solid #979797;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        box-shadow: 0 2px 5px #979797;
-        justify-content: space-evenly;
-        
-    }
-
-    #merc {
-        width: 348px;
-    }
-
-     #val, #tipotran {
-        width: 150px;
-    }
-
-    .conjuntoinput {
-        width: 95%;
-        height: 57px;
-        display: flex;
-        flex-direction: row;
-        
-    }
-
-    .add-btn {
-        width: 95%;
-        display: flex;
-        justify-content: right;
-        padding-right: 6px;
-    }
-
-    .addtran-btn {
-        width: 200px;
-        height: 33px;
-    }
-    
-    .extrato {
-        width: 95%;
-        height: 344px;
-        padding-top: 23px;
-    }
-
-}
 
 /* mobile */
 @media (max-width: 426px) {
     section {
         width: 100vw;
         margin: auto;
+        
     }
 
     .tranbox {

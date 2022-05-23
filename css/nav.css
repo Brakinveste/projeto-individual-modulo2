@@ -45,7 +45,6 @@ nav ul li {
 .checkbtn {
     font-size: 30px;
     float: right;
-    /*margin-right: 40px;*/
     cursor: pointer;
     display: none;
 }
@@ -75,8 +74,8 @@ nav ul li {
     padding: 10px;
 }
 
-/* tablet - portrait */
-@media (min-width: 768px) and (max-width: 1023px) {
+/* mobile */
+@media  (max-width: 426px) {
         .menulogo {
         width: 100%;
         display: flex;
