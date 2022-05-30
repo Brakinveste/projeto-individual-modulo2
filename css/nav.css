@@ -220,6 +220,7 @@
     }
 
     .btn-close {
+        margin-left: -25px;
         display: flex;
         padding-left: 7px;
         padding-top: 12px;
@@ -231,7 +232,7 @@
 
     .listamenu {
         display: flex;
-        width: 40%;
+        width: 37%;
         flex-direction: column; 
         padding-top: 20px;
     }
