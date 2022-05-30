@@ -7,7 +7,12 @@
     
 }
 
-h1 {
+h1.titulo {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+h1.tituloreserva {
     font-size: 20px;
     font-weight: 100;
 }

@@ -1,87 +1,118 @@
-nav {
-    background-color: #dbdbdb;
-    height: 80px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-   
+@media (min-width:1024px) and (max-width: 1900px) {
+    nav {
+        background-color: #dbdbdb;
+        height: 80px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .menulogo {
+        width: 1100px;
+        margin: auto;
+        padding: 0px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;  
+    }
+
+    .tituloreserva {
+        width: 100%;
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .titulo {
+        display: none;
+    }
+
+    .marca {
+        width: 40px;
+        height: 36.84px;
     
-}
+    }
 
-.menulogo {
-    width: 1100px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-}
+    .listamenu {
+        display: flex;
+        width: max-content;
+    }
 
-label.logo {
-    font-size: 20px;
-    padding: 0;
-    display: flex;
-    align-items: center;
-}
+    nav ul {
+        float: right;
+        margin-right: 0px;
+        margin-top: 0px;
+    }
 
-.marca {
-    width: 40px; 
-    height: 36.84px;
-    margin-right: 20px;
-}
+    nav ul li {
+        display: inline-block;
+        margin: 0 5px;
+    }
 
-nav ul {
-    float: right;
- 
-    margin-right: 0px;
-    margin-top: 0px;
-}
+    .checkbtn {
+        font-size: 30px;
+        float: right;
+        cursor: pointer;
+        display: none;
+    }
 
-nav ul li {
-    display: inline-block;
-    margin: 0 5px;
-}
+    .closebtn {
+        font-size: 30px;
+        float: right;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
 
-.checkbtn {
-    font-size: 30px;
-    float: right;
-    cursor: pointer;
-    display: none;
-}
+    #check {
+        display: none;
+    }
 
-.closebtn {
-    font-size: 30px;
-    float: right;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
+    #close {
+        display: none;
+    }
 
-#check {
-    display: none;
-}
-
-#close {
-    display: none;
-}
-
-
-.menubox ul {
-    text-decoration: none;
-    color: black;
-    background-color: #fff;
-    display: flex;
-    padding: 10px;
+    .menubox ul {
+        text-decoration: none;
+        color: black;
+        background-color: #fff;
+        display: flex;
+        padding: 10px;
+    }
 }
 
 /* mobile */
-@media  (max-width: 426px) {
-        .menulogo {
+@media (max-width: 599px) {
+    
+    nav {
+        background-color: #dbdbdb;
+        height: 60px;
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        align-items: center;
+    }
+
+    .marca {
+        width: 30px;
+        height: 27.63px;
+    }
+    
+    .menulogo {
+        width: 100%;
+        padding: 0px 20px;
+        display: flex;
         flex-direction: row-reverse;
-        
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .tituloreserva {
+        display: none;
+    }
+
+    .titulo {
+        display: block;
+        width: 100%;
+        text-align: center; 
     }
 
     #check {
@@ -92,17 +123,23 @@ nav ul li {
         display: block;
     }
 
-    ul .closebtn {
-        display: block;
-        color: #fff;
-        float: left;
-        padding: 20px;
+    .btn-close {
+        display: flex;
+        padding-left: 7px;
+        padding-top: 12px;
     }
 
+    .close-btn {
+        width: 16px;
+    }
+ 
     .listamenu {
-        
+        display: flex;
+        width: 100%;
+        flex-direction: column; 
+        padding-top: 20px;
     }
-
+    
     .menubox ul {
         position: fixed;
         width: 100%;
@@ -111,22 +148,20 @@ nav ul li {
         top: 0%;
         right: -100%;
         text-align: right;
-        padding-top: 60px;
-        padding-right: 160px;
+        padding-top: 10px;
+        padding-right: 25%;
         transition: all .5s;
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
     }
-
+    
     nav ul li {
         display: block;
-        margin: 50px 0;
-        line-height: 30px;
+        margin: 15px 0;
     }
 
     nav ul li a {
-        font-size: 20px;
+        font-size: 16px;
         color: #fff;
     }
 
@@ -137,17 +172,102 @@ nav ul li {
     }
 
     #check:checked ~ .menubox ul {
-        right: -20%;
+        right: -60px;
+    }
+}
+
+/* tablet portrait*/
+@media (min-width:600px) and (max-width: 1023px) {
+
+    nav {
+        background-color: #dbdbdb;
+        height: 60px;
+        width: 100%;
+        display: flex;
+        align-items: center;
     }
 
-    #close:checked ~ .menubox ul {
+    .marca {
+        width: 30px;
+        height: 27.63px;
+    }
+    
+    .menulogo {
+        width: 100%;
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .tituloreserva {
+        display: none;
+    }
+
+    .titulo {
+        display: block;
+        width: 100%;
+        text-align: center; 
+    }
+
+    #check {
+        display: none;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    .btn-close {
+        display: flex;
+        padding-left: 7px;
+        padding-top: 12px;
+    }
+
+    .close-btn {
+        width: 16px;
+    }
+
+    .listamenu {
+        display: flex;
+        width: 40%;
+        flex-direction: column; 
+        padding-top: 20px;
+    }
+    
+    .menubox ul {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #333333;
+        top: 0%;
         right: -100%;
+        text-align: right;
+        padding-top: 10px;
+        padding-right: 25%;
+        transition: all .5s;
+        display: flex;
+        flex-direction: column;
     }
+    
+    nav ul li {
+        display: block;
+        margin: 15px 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        color: #fff;
+    }
+
+    a:active, a:hover {
+        background: rgb(60, 60, 60);
+        transition: all .5s; 
+    }
+
+    #check:checked ~ .menubox ul {
+        right: -67%;
+    }
+
 }
-
-@media (max-width: 1024px) {
-
-}
-
-
-

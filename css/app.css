@@ -1,122 +1,120 @@
-h2 {
-    font-size: 18px;
-    font-weight: bold;
+@media (min-width:1024px) and (max-width: 1900px) {
+
+    h2 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    section {
+        width: 1100px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .tranbox {
+        width: 100%;
+        padding: 26px 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .novatran {
+        width: 400px;
+        height: 344px;
+        background-color: #ffffff;
+        border: 1px solid #979797;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 2px 5px #979797;
+        justify-content: space-evenly;
+    }
+
+    .conjuntoinput {
+        width: 100%;
+        height: 209px;
+        padding: 0px 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .labelinput {
+        font-size: 14px;
+    }
+
+    #merc, #val, #tipotran {
+        width: 100%;
+        height: 32px;
+        border: 1px solid #979797;
+        border-radius: 5px;
+    }
+
+    .add-btn {
+        width: 100%;
+        padding: 0px 14px;
+    }
+
+    .addtran-btn {
+        width: 100%;
+        height: 32px;
+        background-color: #333333;
+        border: 0px solid #979797;
+        border-radius: 5px;
+        color: #ffffff;
+        font-size: 14px;
+    }
+
+    .extrato {
+        width: 680px;
+        height: 344px;
+        padding-left: 20px;
+    }
+
+    .subtitle2 {
+        text-align: center;
+        padding-top: 22px;
+    }
+
+    .extratotable {
+        padding-top: 5px;
+    }
+
+    table {
+        border-collapse: collapse;
+        font-size: 14px;
+    }
+
+    td {
+        border-bottom: 1px solid #979797;
+        padding: 7px;
+    }
+
+    .tablecabecalho {
+        font-weight: bold;
+        border-top: 2px solid #fff
+    }
+
+    .tablereso {
+        font-weight: bold;
+        border-top: 4px double #979797;
+        border-bottom: 2px solid transparent;
+    }
+
+    .lucro {
+        margin-top: -10px;
+        font-size: 10px;
+        text-align: end;
+    }
 }
-
-section {
-    width: 1100px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-
-}
-
-.tranbox {
-    width: 100%;
-    padding: 26px 0px;
-    display: flex;
-    justify-content: space-between;
-    
-
-}
-
-.novatran {
-    width: 400px;
-    height: 344px;
-    background-color: #ffffff;
-    border: 1px solid #979797;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 2px 5px #979797;
-    justify-content: space-evenly;
-    
-}
-
-.conjuntoinput {
-    width: auto;
-    height: 209px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    
-    
-}
-
-.labelinput {
-    font-size: 14px;
-}
-
-#merc, #val, #tipotran {
-    width: 370px;
-    height: 32px;
-    border: 1px solid #979797;
-    border-radius: 5px;
-}
-
-.addtran-btn {
-    width: 370px;
-    height: 32px;
-    background-color: #333333;
-    border: 0px solid #979797;
-    border-radius: 5px;
-    color: #ffffff;
-    font-size: 14px;
-
-}
-
-.extrato {
-    
-    width: 680px;
-    height: 344px;
-}
-
-.subtitle2 {
-    text-align: center;
-    padding-top: 25px;
-}
-
-.extratotable {
-    padding-top: 5px;
-}
-
-table {
-    border-collapse: collapse;
-    font-size: 14px;
-    
-}
-
-td {
-    border-bottom: 1px solid #979797;
-    padding: 7px;
-}
-
-
-
-.tablecabecalho {
-    font-weight: bold;
-    border-top: 2px solid #fff
-}
-
-.tablereso {
-    font-weight: bold;
-    border-top: 3px double #979797;
-    border-bottom-color: #ffffff; 
-    padding-bottom: 0%;
-    
-    
-}
-
-.lucro {
-    font-size: 10px;
-    text-align: end;
-}
-
 
 
 /* mobile */
-@media (max-width: 426px) {
+@media (max-width: 767px) {
+    
     section {
         width: 100vw;
         margin: auto;
@@ -124,11 +122,10 @@ td {
     }
 
     .tranbox {
-        padding: 26px 0px;
+        padding: 26px 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
-           
     }
 
     .subtitle1 {
@@ -136,28 +133,14 @@ td {
     }
     
     .novatran {
-        width: 90%;
+        width: 100%;
         height: 290px;
         margin: 0px; 
         padding-bottom: 29px;
-        background-color: #ffffff;
         border: none;
         border-bottom: 1px solid #979797;
         border-radius: 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         box-shadow: none;
-        justify-content: space-evenly;
-        
-    }
-
-    #merc {
-        width: 100%;
-    }
-
-     #val, #tipotran {
-        width: 100%;
     }
 
     .conjuntoinput {
@@ -166,20 +149,28 @@ td {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        
+    }
+
+    #merc, #val, #tipotran {
+        width: 100%;
+        height: 32px;
+        border: 1px solid #979797;
+        border-radius: 5px;
     }
 
     .add-btn {
         width: 100%;
-        padding-top: 19px;
-        padding-right: 0;
-       
-        
+        padding-top: 20px;
     }
-
+    
     .addtran-btn {
         width: 100%;
-        height: 33px;
+        height: 32px;
+        background-color: #333333;
+        border: 0px solid #979797;
+        border-radius: 5px;
+        color: #ffffff;
+        font-size: 14px;
     }
     
     .extrato {
@@ -187,5 +178,140 @@ td {
         height: 344px;
         padding-top: 23px;
     }
-
 }
+
+/* tablet portrait*/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    section {
+        width: 100%;
+        margin: auto;
+    }
+
+    .tranbox {
+        padding: 26px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .subtitle1 h2 {
+        display: block;
+        font-size: 18px;
+    }
+    
+    .novatran {
+        width: 100%;
+        height: 189px;
+        background-color: #ffffff;
+        border: 1px solid #979797;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 2px 5px #979797;
+        justify-content: space-evenly;
+    }
+
+    .conjuntoinput {
+        width: 100%;
+        height: 30px;
+        padding: 0px 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #tipotran {
+        width: 150px;
+        height: 32px;
+        margin-right: 20px;
+    }
+
+    #merc {
+        width: 348px;
+        height: 32px;
+        
+    }
+
+    .imputval {
+        margin-left: 20px;
+    }
+
+    #val {
+        width: 150px;
+        height: 32px;
+        
+    }
+
+   
+
+    .add-btn {
+        width: 100%;
+        padding: 20px 10px 0px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .addtran-btn {
+        width: 200px;
+        height: 32px;
+        background-color: #333333;
+        border: 0px solid #979797;
+        border-radius: 5px;
+        color: #ffffff;
+        font-size: 14px;
+    }
+        
+    .extrato {
+        
+        width: 100%;
+        height: 344px;
+        padding-top: 20px;
+    }
+    
+    .subtitle2 {
+        text-align: center;
+        padding-top: 22px;
+    }
+    
+    .subtitle2 h2 {
+        font-size: 18px;
+    }
+
+    .extratotable {
+        padding-top: 5px;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14px;
+    }
+    
+    td {
+        border-bottom: 1px solid #979797;
+        padding: 7px;
+    }
+    
+    .tablecabecalho {
+        font-weight: bold;
+        border-top: 2px solid #fff
+    }
+    
+    .tablereso {
+        font-weight: bold;
+        border-top: 4px double #979797;
+        border-bottom: 2px solid transparent;
+    }
+    
+    .lucro {
+        margin-top: -10px;
+        padding-right: 5px;
+        font-size: 10px;
+        text-align: end;
+    }
+}
+
