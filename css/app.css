@@ -1,17 +1,14 @@
-@media (min-width:1024px) and (max-width: 1900px) {
-
     h2 {
         font-size: 18px;
         font-weight: bold;
     }
 
     section {
-        width: 1100px;
+        width: 100%;
         margin: auto;
         display: flex;
         justify-content: center;
     }
-
 
     .tranbox {
         width: 100%;
@@ -29,7 +26,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        box-shadow: 0 2px 5px #979797;
         justify-content: space-evenly;
     }
 
@@ -105,85 +101,25 @@
     }
 
     .lucro {
-        margin-top: -10px;
+       
         font-size: 10px;
         text-align: end;
     }
-}
 
-
-/* mobile */
-@media (max-width: 767px) {
     
-    section {
-        width: 100vw;
-        margin: auto;
+
+
+@media (min-width:1100px)  {
+    .tranbox {
+        width: 1100px;
         
     }
-
-    .tranbox {
-        padding: 26px 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .subtitle1 {
-        display: none;
-    }
-    
-    .novatran {
-        width: 100%;
-        height: 290px;
-        margin: 0px; 
-        padding-bottom: 29px;
-        border: none;
-        border-bottom: 1px solid #979797;
-        border-radius: 0px;
-        box-shadow: none;
-    }
-
-    .conjuntoinput {
-        width: 100%;
-        height: 208px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    #merc, #val, #tipotran {
-        width: 100%;
-        height: 32px;
-        border: 1px solid #979797;
-        border-radius: 5px;
-    }
-
-    .add-btn {
-        width: 100%;
-        padding-top: 20px;
-    }
-    
-    .addtran-btn {
-        width: 100%;
-        height: 32px;
-        background-color: #333333;
-        border: 0px solid #979797;
-        border-radius: 5px;
-        color: #ffffff;
-        font-size: 14px;
-    }
-    
-    .extrato {
-        width: 90%;
-        height: 344px;
-        padding-top: 23px;
-    }
 }
 
+
+
 /* tablet portrait*/
-
-@media (min-width: 768px) and (max-width: 1023px) {
-
+@media (max-width: 1023px) {
     section {
         width: 100%;
         margin: auto;
@@ -211,7 +147,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        box-shadow: 0 2px 5px #979797;
         justify-content: space-evenly;
     }
 
@@ -225,32 +160,36 @@
     }
 
     #tipotran {
-        width: 150px;
+        width: 100%;
         height: 32px;
-        margin-right: 20px;
     }
 
     #merc {
-        width: 348px;
+        width: 100%;
         height: 32px;
-        
-    }
-
-    .imputval {
-        margin-left: 20px;
     }
 
     #val {
-        width: 150px;
+        width: 100%;
         height: 32px;
-        
     }
 
-   
+    .imput-tipo {
+        width: calc(25% + 20px);
+        padding: 0px 20px;
+    }
+ 
+    .imput-merc {
+        width: 50%;
+    }
+
+    .imput-val {
+        width: 25%;
+        margin-left: 20px;
+    }
 
     .add-btn {
-        width: 100%;
-        padding: 20px 10px 0px;
+        padding:  20px 10px 0px 0px;
         display: flex;
         justify-content: flex-end;
     }
@@ -266,10 +205,9 @@
     }
         
     .extrato {
-        
         width: 100%;
         height: 344px;
-        padding-top: 20px;
+        padding: 23px 0px 0px 0px;
     }
     
     .subtitle2 {
@@ -308,10 +246,87 @@
     }
     
     .lucro {
-        margin-top: -10px;
-        padding-right: 5px;
+        
         font-size: 10px;
         text-align: end;
     }
 }
 
+/* mobile */
+@media (max-width: 650px) {
+    section {
+        width: 100%;
+        margin: auto;
+    }
+
+    .tranbox {
+        padding: 26px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subtitle1 {
+        display: none;
+    }
+    
+    .novatran {
+        height: 290px;
+        margin: 0px; 
+        padding-bottom: 29px;
+        border: none;
+        border-bottom: 1px solid #979797;
+        border-radius: 0px;
+        box-shadow: none;
+    }
+
+    .conjuntoinput {
+        width: 100%;
+        height: 208px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #merc, #val, #tipotran {
+        width: 100%;
+        height: 32px;
+        border: 1px solid #979797;
+        border-radius: 5px;
+    }
+
+    .imput-tipo {
+        width: 100%;
+        padding: 0;      
+    }
+ 
+    .imput-merc {
+        width: 100%;
+    }
+
+    .imput-val {
+        width: 100%;
+        margin: 0;
+    }
+
+    .add-btn {
+        padding:  20px 0px 0px 0px;
+    }
+    
+    .addtran-btn {
+        width: 100%;
+        height: 32px;
+        background-color: #333333;
+        border: 0px solid #979797;
+        border-radius: 5px;
+        color: #ffffff;
+        font-size: 14px;
+    }
+    
+    .extrato {
+        width: 100%;
+        height: 344px;
+        padding: 23px 0px 0px 0px;
+    }
+}

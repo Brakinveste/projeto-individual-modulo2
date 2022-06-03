@@ -35,18 +35,18 @@
             </label>
             
             <h1 class="tituloreserva"> Controle financeiro </h1>
-                <div class="menubox">
-                    <ul>
-                        <label class="btn-close"> 
-                            <img class="close-btn" src="img/x.svg" > 
-                        </label>
-                        </label>
-                        <div class="listamenu">
-                            <li><a href="#"> Cadastro de transações </a></li>
-                            <li><a href="#"> Limpar dados </a></li>
-                        </div>
-                    </ul>
-                </div>
+            <div class="menubox">
+                <ul>
+                    <label class="btn-close"> 
+                        <img class="close-btn" src="img/x.svg" > 
+                    </label>
+                    </label>
+                      
+                        <li><a href="#"> Cadastro de transações </a></li>
+                        <li class="separador"><a href="#"> | </a></li>
+                        <li><a href="#"> Limpar dados </a></li>
+                </ul>
+            </div>
         </div>
     </nav>
     <section class="container">
@@ -56,7 +56,7 @@
                     <h2> Nova transação </h2>
                 </div>
                 <div class="conjuntoinput">
-                    <div>
+                    <div class="imput-tipo">
                         <label class="labelinput" for="tipotran"> Tipo de transação </label><br>
                         <select class="tipotran" name="tipotran" id="tipotran">
                             <option value="compra"> Compra </option>
@@ -64,17 +64,17 @@
                         </select>
 
                     </div>
-                    <div>
+                    <div class="imput-merc">
                         <label class="labelinput" for="merc"> Nome da mercadoria </label><br>
                         <input type="text" name="merc" id="merc" placeholder="  input">
                     </div>
-                    <div class="imputval">
+                    <div class="imput-val">
                         <label class="labelinput" for="val"> Valor </label><br>
                         <input type="text" name="val" id="val" placeholder="  R$ 0,00">
                     </div>
                 </div>
                 <div class="add-btn">
-                    <input class="addtran-btn" type="submit" value="Adicionar transação">
+                    <input class="addtran-btn" type="button" value="Adicionar transação">
                 </div>
               
 
@@ -87,7 +87,7 @@
                     
                     <table>
                         <tr class="tablecabecalho">
-                            <td class="coluna1" style="width: 10%;" align="center">  </td>
+                            <td class="coluna1" style="width: 6%;" align="center">  </td>
                             <td class="coluna2" style="width: 30%;"> Mercadoria </td>
                             <td class="coluna3" style="width: 50%;" align="right" > Valor </td>
                         </tr>
@@ -110,19 +110,23 @@
                         <tr class="tablereso">
                             <td align="center">  </td>
                             <td> Total </td>
-                            <td align="right"> R$ 12.909,99 </td>
+                            <td align="right"> R$ 12.909,99 
+                                <div class="lucro"> (LUCRO) </div>
+                            </td>
                         </tr>
                         
                     </table>
-                    <div class="lucro">
-                        (LUCRO) 
-                    </div>
+                    
                 </div>
 
             </div>
         </div>
         
     </section>
+    
+        <footer>
+
+        </footer>
     
 </body>
 </html>
