@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- o arquivo 'style.css' define estilo geral da index-->
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
     
     <!-- o arquivo 'nav.css' define o estilo da barra de navegação-->
-    <link rel="stylesheet" href="css/nav.css" type="text/css">
+    <link rel="stylesheet" href="./css/nav.css" type="text/css">
     
     <!-- o arquivo 'app.css' define o estilo do conteudo abaixo da barra de navegação-->
-    <link rel="stylesheet" href="css/app.css" type="text/css">
+    <link rel="stylesheet" href="./css/app.css" type="text/css">
     
     <!-- a fonte 'lato' utilizada nesta pagina é acessada externamente no font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -55,6 +55,7 @@
                 <div class="subtitle1">
                     <h2> Nova transação </h2>
                 </div>
+                <form class="formulario" id="formulario">
                 <div class="conjuntoinput">
                     <div class="imput-tipo">
                         <label class="labelinput" for="tipotran"> Tipo de transação </label><br>
@@ -66,18 +67,20 @@
                     </div>
                     <div class="imput-merc">
                         <label class="labelinput" for="merc"> Nome da mercadoria </label><br>
-                        <input type="text" name="merc" id="merc" placeholder="  input">
+                        <input type="text" name="merc"  id="merc" placeholder="  input" >
                     </div>
                     <div class="imput-val">
                         <label class="labelinput" for="val"> Valor </label><br>
-                        <input type="text" name="val" id="val" placeholder="  R$ 0,00">
+                        <input type="text" name="val" id="val" placeholder=" R$ 0,00" onKeyPress="return(moeda(this,'.',',',event))  ">
+                        <!--  -->
                     </div>
                 </div>
                 <div class="add-btn">
-                    <input class="addtran-btn" type="button" value="Adicionar transação">
+                    
+                    <input class="addtran-btn" type="button" value="Adicionar transação" onclick="transacao.executarTrans()"> 
                 </div>
-              
-
+           </form> 
+ 
             </div>
             <div class="extrato">
                 <div class="subtitle2">
@@ -85,36 +88,15 @@
                 </div>
                 <div class="extratotable">
                     
-                    <table>
-                        <tr class="tablecabecalho">
+                    <table class="lista">
+                        <thead class="tablecabecalho">
                             <td class="coluna1" style="width: 6%;" align="center">  </td>
                             <td class="coluna2" style="width: 30%;"> Mercadoria </td>
                             <td class="coluna3" style="width: 50%;" align="right" > Valor </td>
-                        </tr>
-                        <tr>
-                            <td align="center"> + </td>
-                            <td> Lorem ipsum dolor sit amet consectetur </td>
-                            <td align="right"> R$ 12.999,99 </td>
-                        </tr>
-                        <tr>
-                            <td align="center"> - </td>
-                            <td> Quis nostrud exercitation </td>
-                            <td align="right"> R$ 99,99 </td>
-                        </tr>
-                        <tr>
-                            <td align="center"> + </td>
-                            <td> Lorem ipsum  </td>
-                            <td align="right"> R$ 9,99 </td>
-                        </tr>
-                        
-                        <tr class="tablereso">
-                            <td align="center">  </td>
-                            <td> Total </td>
-                            <td align="right"> R$ 12.909,99 
-                                <div class="lucro"> (LUCRO) </div>
-                            </td>
-                        </tr>
-                        
+                        </thead>
+                        <tbody>
+                       
+                </tbody>
                     </table>
                     
                 </div>
@@ -127,6 +109,35 @@
         <footer>
 
         </footer>
-    
+    <script src="./assets/js/transacao.js"></script>
 </body>
 </html>
+
+
+
+
+<!--
+                         <tr>
+                            <td align="center"> + </td>
+                            <td> Lorem ipsum dolor sit amet consectetur </td>
+                            <td align="right"> R$ 0,00 </td>
+                        </tr>
+                        <tr>
+                            <td align="center"> - </td>
+                            <td> Quis nostrud exercitation </td>
+                            <td align="right"> R$ 0,00 </td>
+                        </tr>
+                        <tr>
+                            <td align="center"> + </td>
+                            <td> Lorem ipsum  </td>
+                            <td align="right"> R$ 0,00 </td>
+                        </tr>
+                        
+                        <tr class="tablereso">
+                            <td align="center">  </td>
+                            <td> Total </td>
+                            <td align="right" id="total"> R$ 0,00 
+                                <div class="lucro" id="lucro"> (LUCRO) </div>
+                            </td>
+                        </tr> 
+                    -->

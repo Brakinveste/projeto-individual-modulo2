@@ -29,6 +29,10 @@
         justify-content: space-evenly;
     }
 
+    .formulario {
+        width: 100%;
+    }
+
     .conjuntoinput {
         width: 100%;
         height: 209px;
